@@ -1,0 +1,520 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+div.container{width:100%;}
+div.content{width:975px; margin:0 auto;}
+
+div.mainContent div.topArea h1 {font-size:25px; font-weight:bold; color:#262526;}
+
+div.header div.topMenu {float:right; background-color:#d7d9d9; behavior:url("PIE.htc");
+	-webkit-border-bottom-left-radius: 7px;	-moz-border-bottom-left-radius: 7px; border-bottom-left-radius: 7px;
+	-webkit-border-bottom-right-radius: 7px; -moz-border-bottom-right-radius: 7px; border-bottom-right-radius: 7px;}
+
+div.header div.topMenu ul {
+   margin: 0; padding: 0px; border: 0; outline: 0; vertical-align: baseline;
+}
+
+div.header div.topMenu ul li{
+    display: block; float: left;
+    list-style-type: none;
+    padding:3px 16px 2px 16px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+div.header div.topMenu ul li a {text-decoration: none; color:#262526;}
+div.header div.logo img {margin-top:30px;}
+
+div.mainContent div.topArea {width:100%; padding: 0px 0px 10px 0px; overflow: hidden;}
+body.place div.mainContent div.topArea {height:40px;}
+div.mainContent div.mainArea {color:#000;}
+
+div.footer {position:relative; width:975px; height: 213px; margin-top:20px; background-image:url('i/footerBG.png');}
+div.footer div.footMenu {position: absolute; left:20px; top:120px; color:#000; font-size:14px;}
+div.footer div.footMenu a {color:#000;}
+
+
+div.mainContent div.mainArea div.smallBox {
+	width:445px; border-width:6px; border-style: solid; float:left;
+	-webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;
+	margin:15px 15px 0px 15px;
+}	
+
+div.mainContent div.mainArea div.smallBox div.heading {width:100%; color:#fff; font-weight:bold; font-size:30px;}
+div.mainContent div.mainArea div.smallBox div.heading img {padding: 0px 53px 0px 10px;}
+
+div.mainContent div.mainArea div.recent {border-color:#86847c;}
+div.mainContent div.mainArea div.recent div.heading {background-color:#86847c; height:30px; padding:5px 0px 0px 5px; font-size:22px;}
+
+div.mainContent div.mainArea div.map {border-color:#868942;}
+div.mainContent div.mainArea div.map h1 {margin:100px 0px 0px 400px;}
+div.mainContent div.mainArea div.map div.heading {background-color:#868942;} 
+
+div.mainContent div.mainArea div.placenames {border-color:#64a495;}
+div.mainContent div.mainArea div.placenames div.heading {background-color:#64a495;}
+div.mainContent div.mainArea div.placenames div.label {float:left; width:90px; padding-bottom:5px; font-weight:bold;}
+div.mainContent div.mainArea div.placenames div.value {float:left; width:310px; padding-bottom:5px;}
+
+
+div.mainContent div.mainArea div.rcahms {border-color:#31604f;}
+div.mainContent div.mainArea div.rcahms div.heading {background-color:#31604f;}
+
+div.mainContent div.mainArea div.rcahms div.label {float:left; width:90px; padding-bottom:5px; font-weight:bold;}
+div.mainContent div.mainArea div.rcahms div.value {float:left; width:310px; padding-bottom:5px;}
+div.mainContent div.mainArea div.rcahms div.noteHeading {font-size:16px; font-weight:bold; margin-top:15px;}
+div.mainContent div.mainArea div.rcahms div.more {width:100%; text-align:center; height:40px; margin-top:20px;}
+div.mainContent div.mainArea div.rcahms div.more a {
+	font-weight: bold; font-size: 16px; color:#fff; text-decoration:none;
+	padding:10px 20px; 
+	background: #6db369;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db369', endColorstr='#346450');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6db369), to(#346450));
+	background: -moz-linear-gradient(top,  #6db369,  #346450);
+	-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; behavior:url("PIE.htc"); 
+	box-shadow:1px 1px 3px #31604f; -moz-box-shadow:1px 1px 3px #31604f;-webkit-box-shadow:1px 1px 3px #31604f;
+}
+
+
+
+div.mainContent div.mainArea div.flickr {border-color:#ba5655;}
+div.mainContent div.mainArea div.flickr div.heading {background-color:#ba5655;}
+div.mainContent div.mainArea div.flickr div.details img.thumb {padding:5px;}
+
+div.mainContent div.mainArea div.photos {border-color:#643241;}
+div.mainContent div.mainArea div.photos div.heading {background-color:#643241;}
+div.mainContent div.mainArea div.photos div.details img.thumb {padding:10px;}
+
+div.mainContent div.mainArea div.tweets {border-color:#274153;}
+div.mainContent div.mainArea div.tweets div.heading {background-color:#274153;}
+div.mainContent div.mainArea div.tweets div.details div.tweet {margin: 3px 0px 7px 0px;}
+div.mainContent div.mainArea div.tweets div.details img.twitIcon {float:left; margin-bottom:6px;}
+div.mainContent div.mainArea div.tweets div.details div.twit {float:left; width:360px; margin-left:10px;}
+
+div.mainContent div.mainArea div.audio {border-color:#da9d57;}
+div.mainContent div.mainArea div.audio div.heading {background-color:#da9d57;} 
+div.mainContent div.mainArea div.audio div.details div.sound {margin-bottom:12px;}
+div.mainContent div.mainArea div.audio div.details div.sound img {float:left; margin-right:10px;}
+div.mainContent div.mainArea div.audio div.details div.trackInfo {float:left; width:320px;}
+div.mainContent div.mainArea div.audio div.details div.trackInfo a {text-decoration:none; color:#000;}
+div.mainContent div.mainArea div.audio div.details div.trackInfo h2 {margin:0px 0px 5px 0px; padding:0px; font-size:16px;}
+
+
+div.mainContent div.mainArea div.youtube {border-color:#943531;}
+div.mainContent div.mainArea div.youtube div.heading {background-color:#943531;}
+
+div.mainContent div.mainArea div.links {border-color:#74656a;}
+div.mainContent div.mainArea div.links div.heading {background-color:#74656a;}
+
+div.mainContent div.mainArea div.info {border-color:#d66f42;}
+div.mainContent div.mainArea div.info div.heading {background-color:#d66f42;} 
+
+div.mainContent div.mainArea div.details {padding:7px;}
+
+div.mainContentHome div.mainArea {margin-top:15px;}
+div.mainContentHome div.mainArea div.search {
+	width:100%;
+	border: 6px solid #86847c;
+	-webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;
+}
+div.mainContentHome div.mainArea div.search div.heading {width:100%; background-color:#86847c; color:#fff; font-weight:bold; font-size:30px;}
+div.mainContentHome div.mainArea div.search div.heading img {padding: 0px 53px 5px 10px;}
+div.mainContentHome div.mainArea div.search div.heading input {margin: 5px 10px 0px 0px;}
+div.mainContentHome div.mainArea div.search div.heading input.hint{color:#474747;}
+
+div.mainContentHome div.mainArea div.search div.searchForm {float:left; width:0px;}
+div.mainContentHome div.mainArea div.search div.searchResults {float:left; width:100%; height:500px;}
+div.mainContentHome div.mainArea div.search div.searchResults div.map {width:100%; height:100%;}
+
+div.mainContentHome div.mainArea div.trails {width:445px; margin:15px 15px 0px 15px; float:left;}
+div.mainContentHome div.mainArea div.trails div.heading {width:100%; text-align:center; font-size:22px; color:#262526;}
+
+
+body.cms-choosePlace div.mainContent div.mainArea {margin-top:15px;}
+body.cms-choosePlace div.mainContent div.mainArea div.search {
+	width:100%;
+	border: 6px solid #86847c;
+	-webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;
+}
+body.cms-choosePlace div.mainContent div.mainArea div.search div.heading {width:100%; background-color:#86847c; color:#fff; font-weight:bold; font-size:30px; height:30px;}
+
+body.cms-choosePlace div.mainContent div.mainArea div.search div.searchForm {float:left; width:0px;}
+body.cms-choosePlace div.mainContent div.mainArea div.search div.searchResults {float:left; width:100%; height:500px;}
+body.cms-choosePlace div.mainContent div.mainArea div.search div.searchResults div.map {width:100%; height:100%;}
+
+body.cms-popupChoosePlace div.map {width:750px; height:400px;}
+
+div.mainContentHome div.trailThumbs div.trail {float:left; width:120px; min-height: 155px; background-color:#474747; margin:9px; padding:5px; -webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;}
+div.mainContentHome div.trailThumbs div.trail a {text-decoration:none; color:#fff; font-size:14px;}
+div.mainContentHome div.recentUpdates div.place {margin:10px;}
+div.mainContentHome div.recentUpdates div.place div.placeImage {float:left;}
+div.mainContentHome div.recentUpdates div.place div.placeText a {float:left; text-decoration:none; color:#000; font-size:14px;}
+
+
+div.mainContentTrail div.mainArea div.trailTop {
+	margin-top:10px;
+	width:100%;
+	border: 6px solid #86847c;
+	-webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;
+}
+div.mainContentTrail div.mainArea div.trailTop div.heading {width:100%; background-color:#86847c; color:#fff; font-weight:bold; font-size:30px;padding: 5px 0px 15px 0px;}
+div.mainContentTrail div.mainArea div.trailTop div.map {width:100%; height:500px;}
+
+div.mainContentTrail div.mainArea div.details{width:100%;}
+
+div.mainContentTrail div.mainArea div.details div.places {float:left; width:310px;}
+div.mainContentTrail div.mainArea div.details div.details {float:left; width:600px;	margin-top:10px;}
+
+div.mainContentTrail div.mainArea div.details div.places div.place {float:left; width:130px; height:150px;}
+
+div.mainContentTrail div.mainArea div.details div.places div.place {float:left; width:120px; min-height: 155px; background-color:#86847c; margin:9px; padding:5px; -webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;}
+div.mainContentTrail div.mainArea div.details div.places div.place a {text-decoration:none; color:#fff; font-size:14px;}
+div.mainContentTrail div.mainArea div.otherTrails {width:100%;}
+div.mainContentTrail div.mainArea div.otherTrails h2 {margin:0px 0px 0px 10px; padding:0px;}
+div.mainContentTrail div.mainArea div.otherTrails div.trail{float:left;  width:120px; min-height: 155px; background-color:#474747; margin:9px; padding:5px; -webkit-border-radius: 5px;	-moz-border-radius: 5px; border-radius: 5px;}
+div.mainContentTrail div.mainArea div.otherTrails div.trail a {text-decoration:none; color:#fff; font-size:14px;}
+
+div.mainContentContact div.info {width:485px; float:left;}
+div.mainContentContact div.info div.heading {width:100%; padding:15px 0px 15px 40px; margin-top:10px; font-size:35px; color:#000; background-color:#d7d9d9; font-style:italic;}
+
+div.mainContentContact div.info div.txt {float:left; width:350px; font-size:16px; color:#000;}
+div.mainContentContact div.col1 div.txt {margin-top:60px;}
+div.mainContentContact div.col2 div.txt {margin-top:40px;}
+div.mainContentContact div.info img {float:left; margin-top:50px; margin-right:10px;}
+div.mainContentContact div.col1 img {margin-left:50px;}
+
+body.cms-edit div.label {font-size:14px; font-weight:bold; width:150px; float:left; margin-bottom:15px;}
+body.cms-edit div.data {font-size:14px; width:400px; float:left;}
+body.cms-edit div.data input.text {width:300px;}
+body.cms-edit div.saved {font-size:20px; margin-bottom:20px; color:#900}
+
+body.cms-editTrail div.label {font-size:14px; font-weight:bold; width:150px; float:left; margin-bottom:15px;}
+body.cms-editTrail div.data {font-size:14px; width:400px; float:left;}
+body.cms-editTrail div.data input.text {width:300px;}
+
+
+
+
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (max-width: 1020px) {
+	div.mainContent div.mainArea {width:900px;}
+}
+
+@media only screen and (max-width: 935px) {
+	div.mainContent div.mainArea {width:800px;}
+}
+
+@media only screen and (max-width: 830px) {
+	div.mainContent div.mainArea {width:700px;}
+}
+
+@media only screen and (max-width: 730px) {
+	div.mainContent div.mainArea {width:600px;}
+}
+
+@media only screen and (max-width: 630px) {
+	div.mainContent div.mainArea {width:500px;}
+}
+
+@media only screen and (max-width: 320px) {
+	div.content{width:320px; margin:0 auto;}
+	div.header div.logo img {margin-top:60px;}
+	div.mainContent div.mainArea {width:280px; margin-left:5px;}
+	div.mainContentHome div.mainArea div.search div.searchResults {height:300px;}
+	div.mainContentTrail div.mainArea div.trailTop div.map 	{height:300px;}
+	div.mainContentHome div.mainArea div.search div.heading img {display:none;}
+	div.mainContentHome div.mainArea div.search div.heading input {width:275px; margin:10px 0px 5px 0px;}
+	div.mainContentHome	div.bottom div.trails {width: 280px;}
+	div.mainContentHome	div.bottom div.recent {width: 280px;}
+	div.mainContentHome div.trailThumbs div.trail {width:120px; margin:4px; padding:5px;å}
+	div.footer {width:320px;}
+	
+	div.mainContent div.mainArea div.smallBox {width:280px;}
+	div.mainContent div.mainArea div.rcahms div.value {width:280px;}
+	
+	
+}
+
+
+
+@media only screen and (max-width: 990px) {
+	div.header div.topMenu {position:absolute; left:0px;right:0px;}
+}
+
+@media only screen and (max-width: 975px) {
+	div.mainContent div.mainArea div.smallBox {margin:15px 5px 0px 5px;}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
